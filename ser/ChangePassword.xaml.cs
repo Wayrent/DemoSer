@@ -1,16 +1,18 @@
 ﻿using ser.Models;
-using System;
 using System.Linq;
 using System.Windows;
 
 namespace ser
 {
-    /// <summary>
-    /// Interaction logic for ChangePassword.xaml
-    /// </summary>
     public partial class ChangePassword : Window
     {
         private readonly int _userId;
+
+        // Конструктор по умолчанию без параметров, необходимый для XAML
+        public ChangePassword()
+        {
+            InitializeComponent();
+        }
 
         public ChangePassword(int userId)
         {
